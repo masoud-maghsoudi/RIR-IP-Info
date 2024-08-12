@@ -218,8 +218,8 @@ def prefix_info_list_to_file(
         file.write(f"Total IP addresses: {total_ip_addresses}")
 
 
-# callback function for c.XFERINFOFUNCTION
-def status(download_t, download_d) -> None:
+# callback function for crl.XFERINFOFUNCTION
+def status(download_t, download_d, upload_t, upload_d) -> None:
     """dispalys the status progress for data fetch
 
     Args:
